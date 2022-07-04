@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT CARD</title>
+</head>
+<body>
+    <h1>REPORT CARD</h1>
+    <p><b>Listed here are each of your classes and the marks:</b>
+<br>
+<br>
+Math: 94%
+<br>
+English: 96%
+<br>
+Physics: 96%
+<br>
+Business: 97%
+<br>
+Tech: 99%
+
+
+    </p>
+    <p id="add"></p>
+    <p id="divide"></p>
+    <script>
+         var Math=94;
+         var English=96;
+         var Physics=96;
+         var Business=97;
+         var Tech=99;
+         var total= Math + English + Physics + Business + Tech;
+
+         var average= total / 5;
+         console.log("Math" + Math);
+         console.log("English" + English);
+         console.log("Physics" + Physics);
+         console.log("Business" + Business);
+         console.log("Tech" + Tech);
+         console.log("total" + total);
+         console.log("average" + average);
+
+
+document.getElementById("add").innerHTML ="Your Total Mark is = " + total + "%";
+document.getElementById("divide").innerHTML ="Your Average is = " + average + "%";
+    </script>
+</body>
+</html>
